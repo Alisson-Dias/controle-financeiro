@@ -1,0 +1,104 @@
+<div class="card-group ">
+    <div class="card border-dark col-3 offset-md-1  text-monospace">
+      <div class="font-weight-dark">
+        <div class="card-header bg-transparent border-primary mb-2 font-italic  font-weight-bold">Moradia</div>                  
+        <div class="row">
+            <div class="col-4">
+                <div class="custom-control custom-switch  mb-2">
+                    <input type="checkbox" class="custom-control-input" id="aluguel"
+                        [(ngModel)]="aluguel" #name="ngModel" name="aluguel"/>
+                    <label class="custom-control-label" for="aluguel">Aluguel</label>
+                </div>  
+            </div>
+            <div class="col-6">
+                <div *ngIf="aluguel" class="input-group">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text">R$</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-number"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="condominio"
+                    [(ngModel)]="condominio" #name="ngModel" name="condominio"/>
+                <label class="custom-control-label" for="condominio">Condomínio</label>
+                <div *ngIf="condominio" class="input-group">   
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">R$</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Valor(para o Real mais próximo)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="contaLuz">
+                <label class="custom-control-label" for="contaLuz">Conta de Luz</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="contaAgua">
+                <label class="custom-control-label" for="contaAgua">Conta de água</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="gas">
+                <label class="custom-control-label" for="gas">Gás/Agua Mineral</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="iptu">
+                <label class="custom-control-label" for="iptu">IPTU</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="telefoneInternet">
+                <label class="custom-control-label" for="telefoneInternet">Telefone residencial/internet</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="telefoneCelular">
+                <label class="custom-control-label" for="telefoneCelular">Telefone Celular</label>
+            </div>  
+            <div class="custom-control custom-switch  mb-3">
+                <input type="checkbox" class="custom-control-input" id="consertoManutencao">
+                <label class="custom-control-label" for="consertoManutencao">Consertos/manutenção</label> 
+            </div>      
+        <hr class="border-primary mb-0">         
+        <div class="card-header bg-transparent border-primary mb-1 font-italic  font-weight-bold">Alimentação</div>
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="supermercado">
+                <label class="custom-control-label" for="supermercado">Supermercado</label> 
+            </div>        
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="restaurante">
+                <label class="custom-control-label" for="restaurante">Restaurante</label> 
+            </div>      
+            <div class="custom-control custom-switch  mb-3">
+                <input type="checkbox" class="custom-control-input" id="barLanche">
+                <label class="custom-control-label" for="barLanche">Bar/Lanches</label> 
+            </div>    
+        <hr class="border-primary mb-0">
+        <div class="card-header bg-transparent border-primary mb-1 font-italic font-weight-bold">Transporte</div>
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="combustivel">
+                <label class="custom-control-label" for="combustivel">Combústivel</label> 
+            </div>    
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="transportePrivado">
+                <label class="custom-control-label" for="transportePrivado">Transporte Privado</label> 
+            </div>    
+            <div class="custom-control custom-switch  mb-2">
+                <input type="checkbox" class="custom-control-input" id="transportePublico">
+                <label class="custom-control-label" for="transportePublico">Transporte Público</label> 
+            </div>    
+            <div class="custom-control custom-switch  mb-3">
+                <input type="checkbox" class="custom-control-input" id="outros">
+                <label class="custom-control-label" for="outros">Outros</label> 
+            </div>    
+        </div> 
+    </div>
+</div>
